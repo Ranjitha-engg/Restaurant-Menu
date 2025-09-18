@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    /* ===== Reset & Theme ===== */
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+    body{
+      background:#111;
+      color:#f4f4f4;
+      line-height:1.6;
+      padding:20px;
+    }
+    h1,h2{text-align:center;margin-bottom:15px;color:#ff9800;}
+
+    /* ===== Header ===== */
+    header{
+      text-align:center;
+      margin-bottom:30px;
+    }
+    header h1{font-size:2.5rem;margin-bottom:10px;}
+    header p{color:#bbb;}
+
+    /* ===== Menu Container ===== */
+    .menu{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap:20px;
+      max-width:1000px;
+      margin:0 auto;
+    }
+
+    /* ===== Section Card ===== */
+    .menu-section{
+      background:#1a1a1a;
+      border-radius:12px;
+      padding:20px;
+      border:1px solid #333;
+      box-shadow:0 4px 10px rgba(0,0,0,0.6);
+      transition:transform 0.2s;
+    }
+    .menu-section:hover{transform:translateY(-5px);}
+    .menu-section h2{margin-bottom:15px;font-size:1.5rem;}
+
+    /* ===== Items ===== */
+    .item{
+      display:flex;
+      justify-content:space-between;
+      margin-bottom:12px;
+      padding-bottom:8px;
+      border-bottom:1px dotted #444;
+    }
+    .item:last-child{border-bottom:none;}
+    .item-name{font-weight:bold;}
+    .item-price{color:#ff9800;}
+
+    /* ===== Footer ===== */
+    footer{
+      margin-top:30px;
+      text-align:center;
+      font-size:0.9rem;
+      color:#aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍴 Ranjitha’s Bistro</h1>
+    <p>Delicious food made with love</p>
+  </header>
+
+  <div class="menu">
+    <!-- Starters -->
+    <div class="menu-section">
+      <h2>Starters</h2>
+      <div class="item"><span class="item-name">Tomato Soup</span><span class="item-price">₹120</span></div>
+      <div class="item"><span class="item-name">Paneer Tikka</span><span class="item-price">₹180</span></div>
+      <div class="item"><span class="item-name">Veg Spring Rolls</span><span class="item-price">₹150</span></div>
+    </div>
+
+    <!-- Main Course -->
+    <div class="menu-section">
+      <h2>Main Course</h2>
+      <div class="item"><span class="item-name">Veg Biryani</span><span class="item-price">₹250</span></div>
+      <div class="item"><span class="item-name">Butter Naan with Paneer Butter Masala</span><span class="item-price">₹280</span></div>
+      <div class="item"><span class="item-name">Mushroom Curry with Rice</span><span class="item-price">₹260</span></div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-section">
+      <h2>Desserts</h2>
+      <div class="item"><span class="item-name">Gulab Jamun (2 pcs)</span><span class="item-price">₹80</span></div>
+      <div class="item"><span class="item-name">Chocolate Brownie</span><span class="item-price">₹150</span></div>
+      <div class="item"><span class="item-name">Ice Cream (Vanilla/Chocolate)</span><span class="item-price">₹100</span></div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-section">
+      <h2>Drinks</h2>
+      <div class="item"><span class="item-name">Masala Chai</span><span class="item-price">₹40</span></div>
+      <div class="item"><span class="item-name">Cold Coffee</span><span class="item-price">₹90</span></div>
+      <div class="item"><span class="item-name">Fresh Lime Soda</span><span class="item-price">₹70</span></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Ranjitha’s Bistro | Built with HTML & CSS only</p>
+  </footer>
+</body>
+</html>
